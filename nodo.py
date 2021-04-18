@@ -1,5 +1,11 @@
 class Nodo:
     def __init__(self,anterior,siguiente,nombre,apellido,telefono):
+        self.setAnterior(anterior)
+        self.setSiguiente(siguiente)
+        self.setNombre(nombre)
+        self.setApellido(apellido)
+        self.setTelefono(telefono)
+    
     def getNombre(self):
         return self.nombre
     def getApellido(self):
@@ -17,9 +23,8 @@ class Nodo:
         self.apellido=apellido
     def setTelefono(self,telefono):
         self.telefono=telefono
-
     def setAnterior(self, anterior):
         self.anterior = anterior
     def setSiguiente(self, siguiente):
         self.siguiente=siguiente
-
+    
